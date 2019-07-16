@@ -95,7 +95,7 @@ class Bot:
                 self.commentpost(random.choices(self.comments))
             except: continue
 
-def pandaBot(igname, igpass):
+def likepandas(igname, igpass):
     ig = Bot(igname, igpass)
     ig.login()
     links = ig.getlinks('pandas',1)
@@ -104,4 +104,4 @@ def pandaBot(igname, igpass):
     ig.close()
     
 if __name__ == '__main__':
-    pandaBot('your username','your password')
+    likepandas('your username','your password')
